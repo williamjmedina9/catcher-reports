@@ -10,7 +10,7 @@ Automated catcher reports built from TrackMan data appended with independently t
 - **Blocking:** Block success rate by side and pitch group, plus run-value credit for each successful block.
 - **Throwing:** Recorded pop times to 2B and 3B, throw velocity, and run-value credit for caught stealings.
 
-Run values calculated from an MLB play by play dataset from the 2024 season. Each report also writes a **review log** listing every credited play and anything that should be checked against video.
+Run values calculated from an MLB play by play dataset from the 2024 season.
 
 ## How to run
 
@@ -18,7 +18,7 @@ Run values calculated from an MLB play by play dataset from the 2024 season. Eac
 python catcher_report.py <TrackMan game file> [--manual tracking.xlsx]
 ```
 
-1. During the game(s) keep a manual log of block attempts, steal attempts, and pass balls along with the pitch number and base state in which they occur in a separate csv file.
+1. During the game(s) keep a manual log of block attempts, steal attempts, and passed balls along with the pitch number and base state in which they occur in a separate csv file.
 2. Open a new Colab notebook, paste in the script, and run the cell.
 3. The script will automatically append the manual log file and match on pitch number.
 4. When finished the PDF downloads
